@@ -1,0 +1,266 @@
+1. What will be the output of the following C code?
+
+    #include <stdio.h>
+    int main()
+    {
+        double *ptr = (double *)100;
+        ptr = ptr + 2;
+        printf("%u", ptr);
+    }
+a) 102
+b) 104
+c) 108
+d) 116
+View Answer
+
+Answer: d
+Explanation:None
+2. What will be the output of the following C code?
+
+    #include <stdio.h>
+    int main()
+    {
+        int *p = (int *)2;
+        int *q = (int *)3;
+        printf("%d", p + q);
+    }
+a) 2
+b) 3
+c) 5
+d) Compile time error
+View Answer
+
+Answer: d
+Explanation: None.
+3. Which of the following arithmetic operation can be applied to pointers a and b?
+(Assuming initialization as int *a = (int *)2; int *b = (int *)3;)
+a) a + b
+b) a – b
+c) a * b
+d) a / b
+View Answer
+
+Answer: b
+Explanation: None.
+4. What is the size of *ptr in a 32-bit machine (Assuming initialization as int *ptr = 10;)?
+a) 1
+b) 2
+c) 4
+d) 8
+View Answer
+
+Answer: c
+Explanation: None.
+5. Which of following logical operation can be applied to pointers?
+(Assuming initialization int *a = 2; int *b = 3;)
+a) a | b
+b) a ^ b
+c) a & b
+d) None of the mentioned
+View Answer
+
+Answer: d
+Explanation: None.
+6. What will be the output of the following C code?
+
+    #include <stdio.h>
+    void main()
+    {
+        char *s = "hello";
+        char *p = s;
+        printf("%c\t%c", *(p + 1), s[1]);
+    }
+a) h e
+b) e l
+c) h h
+d) e e
+View Answer
+
+Answer: d
+Explanation: None.
+7. What will be the output of the following C code?
+
+    #include <stdio.h>
+    void main()
+    {
+        char *s = "hello";
+        char *p = s;
+        printf("%c\t%c", *p, s[1]);
+    }
+a) e h
+b) Compile time error
+c) h h
+d) h e
+View Answer
+
+Answer: d
+Explanation: None.
+8. What will be the output of the following C code?
+
+    #include <stdio.h>
+    void main()
+    {
+        char *s = "hello";
+        char *n = "cjn";
+        char *p = s + n;
+        printf("%c\t%c", *p, s[1]);
+    }
+a) h e
+b) Compile time error
+c) c o
+d) h n
+View Answer
+
+Answer: b
+Explanation: None.
+
+1. What will be the output of the following C code?
+
+    #include <stdio.h>
+    void main()
+    {
+        char *s = "hello";
+        char *p = s * 3;
+        printf("%c\t%c", *p, s[1]);
+    }
+a) h e
+b) l e
+c) Compile time error
+d) l h
+View Answer
+
+Answer: c
+Explanation: None.
+2. What will be the output of the following C code?
+
+    #include <stdio.h>
+    void main()
+    {
+        char *s= "hello";
+        char *p = s + 2;
+        printf("%c\t%c", *p, s[1]);
+    }
+a) l e
+b) h e
+c) l l
+d) h l
+View Answer
+
+Answer: a
+Explanation: None.
+3. What will be the output of the following C code?
+
+    #include <stdio.h>
+    int main()
+    {
+        void *p;
+        int a[4] = {1, 2, 3, 8};
+        p = &a[3];
+        int *ptr = &a[2];
+        int n = p - ptr;
+        printf("%d\n", n);
+    }
+a) 1
+b) Compile time error
+c) Segmentation fault
+d) 4
+View Answer
+
+Answer: b
+Explanation: None.
+4. What will be the output of the following C code?
+
+    #include <stdio.h>
+    int main()
+    {
+        void *p;
+        int a[4] = {1, 2, 3, 4};
+        p = &a[3];
+        int *ptr = &a[2];
+        int n = (int*)p - ptr;
+        printf("%d\n", n);
+    }
+a) 1
+b) Compile time error
+c) Segmentation fault
+d) 4
+View Answer
+
+Answer: a
+Explanation: None.
+5. What will be the output of the following C code?
+
+    #include <stdio.h>
+    int main()
+    {
+        int a[4] = {1, 2, 3, 4};
+        int b[4] = {1, 2, 3, 4};
+        int n = &b[3] - &a[2];
+        printf("%d\n", n);
+    }
+a) -3
+b) 5
+c) 4
+d) Compile time error
+View Answer
+
+Answer: a
+Explanation: None.
+6. What will be the output of the following C code?
+
+    #include <stdio.h>
+    int main()
+    {
+        int a[4] = {1, 2, 3, 4};
+        int *p = &a[1];
+        int *ptr = &a[2];
+        ptr = ptr * 1;
+        printf("%d\n", *ptr);
+    }
+a) 2
+b) 1
+c) Compile time error
+d) Undefined behaviour
+View Answer
+
+Answer: c
+Explanation: None.
+7. What will be the output of the following C code?
+
+    #include <stdio.h>
+    int main()
+    {
+        int a[4] = {1, 2, 3, 4};
+        int *ptr  =  &a[2];
+        float n = 1;
+        ptr = ptr + n;
+        printf("%d\n", *ptr);
+    }
+a) 4
+b) 3
+c) Compile time error
+d) Undefined behaviour
+View Answer
+
+Answer: c
+Explanation: None.
+8. What will be the output of the following C code?
+
+    #include <stdio.h>
+    int main()
+    {
+        int a[4] = {1, 2, 3, 4};
+        void *p = &a[1];
+        void *ptr = &a[2];
+        int n = 1;
+        n = ptr - p;
+        printf("%d\n", n);
+    }
+a) 1
+b) 4
+c) Compile time error
+d) Depends on the compiler
+View Answer
+
+Answer: b
+Explanation: None.

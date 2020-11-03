@@ -1,0 +1,256 @@
+1. What will be the output of the following C code?
+
+    #include <stdio.h>
+    int main()
+    {
+        char *p = NULL;
+        char *q = 0;
+        if (p)
+            printf(" p ");
+        else
+            printf("nullp");
+        if (q)
+            printf("q\n");
+        else
+            printf(" nullq\n");
+    }
+a) nullp nullq
+b) Depends on the compiler
+c) x nullq where x can be p or nullp depending on the value of NULL
+d) p q
+View Answer
+
+Answer: a
+Explanation: None.
+2. What will be the output of the following C code?
+
+    #include <stdio.h>
+    int main()
+    {
+        int i = 10;
+        void *p = &i;
+        printf("%d\n", (int)*p);
+        return 0;
+    }
+a) Compile time error
+b) Segmentation fault/runtime crash
+c) 10
+d) Undefined behaviour
+View Answer
+
+Answer: a
+Explanation: None.
+3. What will be the output of the following C code?
+
+    #include <stdio.h>
+    int main()
+    {
+        int i = 10;
+        void *p = &i;
+        printf("%f\n", *(float*)p);
+        return 0;
+    }
+a) Compile time error
+b) Undefined behaviour
+c) 10
+d) 0.000000
+View Answer
+
+Answer: d
+Explanation: None.
+4. What will be the output of the following C code?
+
+    #include <stdio.h>
+    int *f();
+    int main()
+    {
+        int *p = f();
+        printf("%d\n", *p);
+    }
+    int *f()
+    {
+        int *j = (int*)malloc(sizeof(int));
+        *j = 10;
+        return j;
+    }
+a) 10
+b) Compile time error
+c) Segmentation fault/runtime crash since pointer to local variable is returned
+d) Undefined behaviour
+View Answer
+
+Answer: a
+Explanation: None.
+5. What will be the output of the following C code?
+
+    #include <stdio.h>
+    int *f();
+    int main()
+    {
+        int *p = f();
+        printf("%d\n", *p);
+    }
+    int *f()
+    {
+        int j = 10;
+        return &j;
+    }
+a) 10
+b) Compile time error
+c) Segmentation fault/runtime crash
+d) Undefined behaviour
+View Answer
+
+Answer: a
+Explanation: We are returning address of a local variable which should not be done. In this specific instance, we are able to see the value of 10, which may not be the case if we call other functions before calling printf() in main().
+6. Comment on the following pointer declaration.
+
+int *ptr, p;
+a) ptr is a pointer to integer, p is not
+b) ptr and p, both are pointers to integer
+c) ptr is a pointer to integer, p may or may not be
+d) ptr and p both are not pointers to integer
+View Answer
+
+Answer: a
+Explanation: None.
+7. What will be the output of the following C code?
+
+    #include <stdio.h>
+    int main()
+    {
+        int *ptr, a = 10;
+        ptr = &a;
+        *ptr += 1;
+        printf("%d,%d/n", *ptr, a);
+    }
+a) 10,10
+b) 10,11
+c) 11,10
+d) 11,11
+View Answer
+
+Answer: d
+Explanation: None.
+8. Comment on the following C statement.
+
+const int *ptr;
+a) You cannot change the value pointed by ptr
+b) You cannot change the pointer ptr itself
+c) You May or may not change the value pointed by ptr
+d) You can change the pointer as well as the value pointed by it
+View Answer
+
+Answer: a
+Explanation: None.
+
+
+1. Which is an indirection operator among the following?
+a) &
+b) *
+c) ->
+d) .
+View Answer
+
+Answer: b
+Explanation: None.
+2. Which of the following does not initialize ptr to null (assuming variable declaration of a as int a=0;)?
+a) int *ptr = &a;
+b) int *ptr = &a – &a;
+c) int *ptr = a – a;
+d) All of the mentioned
+View Answer
+
+Answer: a
+Explanation: None.
+3. What will be the output of the following C code?
+
+    #include <stdio.h>
+    int x = 0;
+    void main()
+    {
+        int *ptr = &x;
+        printf("%p\n", ptr);
+        x++;
+        printf("%p\n ", ptr);
+    }
+a) Same address
+b) Different address
+c) Compile time error
+d) Varies
+View Answer
+
+Answer: a
+Explanation: None.
+4. What will be the output of the following C code?
+
+    #include <stdio.h>
+    int x = 0;
+    void main()
+    {
+        int *const ptr = &x;
+        printf("%p\n", ptr);
+        ptr++;
+        printf("%p\n ", ptr);
+    }
+a) 0 1
+b) Compile time error
+c) 0xbfd605e8 0xbfd605ec
+d) 0xbfd605e8 0xbfd605e8
+View Answer
+
+Answer: b
+Explanation: None.
+5. What will be the output of the following C code?
+
+    #include <stdio.h>
+    void main()
+    {
+        int x = 0;
+        int *ptr = &x;
+        printf("%p\n", ptr);
+        ptr++;
+        printf("%p\n ", ptr);
+    }
+a) 0xbfd605e8 0xbfd605ec
+b) 0xbfd605e8 0cbfd60520
+c) 0xbfd605e8 0xbfd605e9
+d) Run time error
+View Answer
+
+Answer: a
+Explanation: None.
+6. What will be the output of the following C code?
+
+    #include <stdio.h>
+    void main()
+    {
+        int x = 0;
+        int *ptr = &5;
+        printf("%p\n", ptr);
+    }
+a) 5
+b) Address of 5
+c) Nothing
+d) Compile time error
+View Answer
+
+Answer: d
+Explanation: None.
+7. What will be the output of the following C code?
+
+    #include <stdio.h>
+    void main()
+    {
+        int x = 0;
+        int *ptr = &x;
+        printf("%d\n", *ptr);
+    }
+a) Address of x
+b) Junk value
+c) 0
+d) Run time error
+View Answer
+
+Answer: c
+Explanation: None.

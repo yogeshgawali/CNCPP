@@ -1,0 +1,288 @@
+1. What will be the output of the following C code?
+
+    #include <stdio.h>
+    int main()
+    {
+        char *str = "hello, world\n";
+        char *strc = "good morning\n";
+        strcpy(strc, str);
+        printf("%s\n", strc);
+        return 0;
+    }
+a) hello, world
+b) Crash/segmentation fault
+c) Undefined behaviour
+d) Run time error
+View Answer
+
+Answer: b
+Explanation: None.
+2. What will be the output of the following C code?
+
+    #include <stdio.h>
+    int main()
+    {
+        char *str = "hello world";
+        char strc[] = "good morning india\n";
+        strcpy(strc, str);
+        printf("%s\n", strc);
+        return 0;
+    }
+a) hello world
+b) hello worldg india
+c) Compile time error
+d) Undefined behaviour
+View Answer
+
+Answer: a
+Explanation: None.
+3. What will be the output of the following C code?
+
+    #include <stdio.h>
+    int main()
+    {
+        char *str = "hello, world!!\n";
+        char strc[] = "good morning\n";
+        strcpy(strc, str);
+        printf("%s\n", strc);
+        return 0;
+    }
+a) hello, world!!
+b) Compile time error
+c) Undefined behaviour
+d) Segmenation fault
+View Answer
+
+Answer: c
+Explanation: None.
+4. What will be the output of the following C code?
+
+    #include <stdio.h>
+    int main()
+    {
+        char *str = "hello, world\n";
+        str[5] = '.';
+        printf("%s\n", str);
+        return 0;
+    }
+a) hello. world
+b) hello, world
+c) Compile error
+d) Segmentation fault
+View Answer
+
+Answer: d
+Explanation: None.
+5. What will be the output of the following C code?
+
+    #include <stdio.h>
+    int main()
+    {
+        char str[] = "hello, world";
+        str[5] = '.';
+        printf("%s\n", str);
+        return 0;
+    }
+a) hello. world
+b) hello, world
+c) Compile error
+d) Segmentation fault
+View Answer
+
+Answer: a
+Explanation: None.
+6. What will be the output of the following C code?
+
+    #include <stdio.h>
+    int main()
+    {
+        char *str = "hello world";
+        char strary[] = "hello world";
+        printf("%d %d\n", sizeof(str), sizeof(strary));
+        return 0;
+    }
+a) 11 11
+b) 12 12
+c) 4 12
+d) 4 11
+View Answer
+
+Answer: c
+Explanation: None.
+7. What will be the output of the following C code?
+
+    #include <stdio.h>
+    int main()
+    {
+        char *str = "hello world";
+        char strary[] = "hello world";
+        printf("%d %d\n", strlen(str), strlen(strary));
+        return 0;
+    }
+a) 11 11
+b) 12 11
+c) 11 12
+d) x 11 where x can be any positive integer.
+View Answer
+
+Answer: a
+Explanation: None.
+8. What will be the output of the following C code?
+
+    #include <stdio.h>
+    void f(char *k)
+    {
+        k++;
+        k[2] = 'm';
+        printf("%c\n", *k);
+    }
+    void main()
+    {
+        char s[] = "hello";
+        f(s);
+    }
+a) l
+b) e
+c) h
+d) o
+View Answer
+
+Answer: b
+Explanation: None.
+9. What will be the output of the following C code?
+
+    #include <stdio.h>
+    void fun(char *k)
+    {
+        printf("%s", k);
+    }
+    void main()
+    {
+        char s[] = "hello";
+        fun(s);
+    }
+a) hello
+b) Run time error
+c) Nothing
+d) h
+View Answer
+
+Answer: a
+Explanation: None.
+
+1. Comment on the output of the following C code.
+
+    #include <stdio.h>
+    int main()
+    {
+        char *str = "This" //Line 1
+        char *ptr = "Program\n"; //Line 2
+        str = ptr; //Line 3
+        printf("%s, %s\n", str, ptr); //Line 4
+    }
+a) Memory holding “this” is cleared at line 3
+b) Memory holding “this” loses its reference at line 3
+c) You cannot assign pointer like in Line 3
+d) Output will be This, Program
+View Answer
+
+Answer: b
+Explanation: None.
+2. What type of initialization is needed for the segment “ptr[3] = ‘3’;” to work?
+a) char *ptr = “Hello!”;
+b) char ptr[] = “Hello!”;
+c) both char *ptr = “Hello!”; and char ptr[] = “Hello!”;
+d) none of the mentioned
+View Answer
+
+Answer: b
+Explanation: None.
+3. What is the syntax for constant pointer to address (i.e., fixed pointer address)?
+a) const <type> * <name>
+b) <type> * const <name>
+c) <type> const * <name>
+d) none of the mentioned
+View Answer
+
+Answer: b
+Explanation: None.
+4. What will be the output of the following C code?
+
+    #include <stdio.h>
+    int add(int a, int b)
+    {
+        return a + b;
+    }
+    int main()
+    {
+        int (*fn_ptr)(int, int);
+        fn_ptr = add;
+        printf("The sum of two numbers is: %d", (int)fn_ptr(2, 3));
+    }
+a) Compile time error, declaration of a function inside main
+b) Compile time error, no definition of function fn_ptr
+c) Compile time error, illegal application of statement fn_ptr = add
+d) No Run time error, output is 5
+View Answer
+
+Answer: d
+Explanation: None.
+5. What is the correct way to declare and assign a function pointer?
+
+(Assuming the function to be assigned is "int multi(int, int);")
+a) int (*fn_ptr)(int, int) = multi;
+b) int *fn_ptr(int, int) = multi;
+c) int *fn_ptr(int, int) = &multi;
+d) none of the mentioned
+View Answer
+
+Answer: a
+Explanation: None.
+6. Calling a function f with a an array variable a[3] where a is an array, is equivalent to __________
+a) f(a[3])
+b) f(*(a + 3))
+c) f(3[a])
+d) all of the mentioned
+View Answer
+
+Answer: d
+Explanation: None.
+7. What will be the output of the following C code?
+
+    #include <stdio.h>
+    void f(char *k)
+    {
+        k++;
+        k[2] = 'm';
+    }
+    void main()
+    {
+        char s[] = "hello";
+        f(s);
+        printf("%c\n", *s);
+    }
+a) h
+b) e
+c) m
+d) o;
+View Answer
+
+Answer: a
+Explanation: None.
+8. What will be the output of the following C code?
+
+    #include <stdio.h>
+    void main()
+    {
+        char s[] = "hello";
+        s++;
+        printf("%c\n", *s);
+    }
+a) Compile time error
+b) h
+c) e
+d) o
+View Answer
+
+Answer: a
+Explanation: None.
