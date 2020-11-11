@@ -1,0 +1,53 @@
+
+C Program to Replace Lowercase Characters by Uppercase & Vice-Versa
+C Program to Remove given Word from a String
+C Program to Remove all Characters in Second String which are present in First String
+	Test case 1 – Here, the First & Second string are different.
+
+	$ gcc removecommonchar.c 
+	$ ./a.out
+
+	Enter the First string:
+	Programming
+	Enter the Second string:
+	Computer
+
+	On removing characters from second string we get: Cpute
+	Test case 2 – Here, the First & Second string are having some common letters.
+
+	$ gcc remove-char.c -o remove-char
+	$ ./remove-char
+
+	Enter the First string:
+	sanfoundry
+	Enter the Second string:
+	sanppppdry
+
+	On removing characters from second string we get: pppp
+	Test case 3 – Here, the First & Second string are same.
+
+	$ gcc remove-char.c -o remove-char
+	$ ./remove-char
+
+	Enter the First string:
+	sanfoundry
+	Enter the Second string:
+	sanfoundry
+
+	On removing characters from second string we get:
+C Program to Replace all the Characters by Lowercase
+C Program to Reverse the String using Recursion
+C Program to Reverse every Word of given String
+	enter the string :C Programming Class
+	C gnimmargorP ssalC
+C Program to Count the Number of Vowels & Consonants in a Sentence
+C Program to Delete All Repeated Words in String
+	Enter the string
+	welcome to sanfoundry's c programming class ,  welcome again to c class !
+	welcome to sanfoundry's c programming class , again !
+	 
+	Enter the string:
+	Welcome to Sanfoundry C Class, Welcome to Java Programming, Welcome to C++ class
+	Welcome to Sanfoundry C Class, Java Programming, C++ class
+C Program to Reverse the String using Both Recursion and Iteration
+C Program to Count the Total Number of Words in the Sentence using Command Line Argument

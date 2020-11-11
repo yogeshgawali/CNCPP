@@ -1,0 +1,15 @@
+C Program to Find the Biggest of 3 Numbers
+C Program to Reverse a Given Number
+C Program to Reverse a Number & Check if it is a Palindrome
+C Program to Find the Sum of two Binary Numbers
+C Program to Find Multiplication of two Binary Numbers
+C Program to find Product of 2 Numbers without using Recursion
+C Program to Check whether a given Number is Armstrong
+C Program to Check whether a given Number is Perfect Number
+C Program to Print Armstrong Number from 1 to 1000
+C Program to Add two Complex Numbers
+C Program to Generate Fibonacci Series of N Numbers using Command-Line Argument
+C Program to Compute First N Fibonacci Numbers using Command Line Arguments
+C Program to Find the Sum of first 50 Natural Numbers using For Loop
+C Program to Swap the Contents of two Numbers using Bitwise XOR Operation
+C Program to Multiply given Number by 4 using Bitwise Operators

@@ -1,0 +1,8 @@
+
+C Program to Check if a given Integer is Odd or Even
+C Program to Calculate the Sum of Odd & Even Numbers
+C Program to Check if a given Integer is Positive or Negative
+C Program to Find the Number of Integers Divisible by 5
+C Program to Read Two Integers M and N & Swap their Values
+C Program to Accept two Integers and Check if they are Equal
+C Program to Compute the Sum of Digits in a given Integer

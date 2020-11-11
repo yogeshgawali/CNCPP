@@ -1,0 +1,5 @@
+
+C Program to Find if a given Year is a Leap Year
+C Program to Extract Last two Digits of a given Year
+C Program to Display the Inventory of Items in a Store
+C Program to Display the ATM Transaction

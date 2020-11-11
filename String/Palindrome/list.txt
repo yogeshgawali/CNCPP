@@ -1,0 +1,5 @@
+C Program to Check if a given String is Palindrome
+C Program to Check if a String is a Palindrome without using the Built-in Function
+C Program to Check whether a given String is Palindrome or not using Recursion
+C Program To Print Smallest and Biggest possible Word which is Palindrome in a given String
+C Program to Find the Largest & Smallest Word in a String

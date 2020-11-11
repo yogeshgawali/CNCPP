@@ -1,0 +1,7 @@
+C Program to Accept the Height of a Person & Categorize as Taller, Dwarf & Average
+C Program to Read a Grade & Display the Equivalent Description
+C Program to Illustrate the Concept of Unions
+C Program to Find the Size of a Union
+C Program to Display Function without using the Main Function
+C Program to Print a Semicolon without using a Semicolon anywhere in the Code
+C program to Increase 1 to all of the given Integer Digit

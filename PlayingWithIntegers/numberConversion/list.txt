@@ -1,0 +1,16 @@
+
+C Program to Convert the given Binary Number into Decimal
+C Program to Convert a Decimal Number to Binary & Count the Number of 1s
+C Program to Convert a Given Number of Days in terms of Years, Weeks & Days
+C Program to Convert Binary to Octal
+C Program to Convert Binary to Hexadecimal
+C Program to Convert Decimal to Octal
+C program to Convert Decimal to Hexadecimal
+C Program to Convert Roman Number to Decimal Number
+C Program to Convert Octal to Binary
+C Program to Convert Hexadecimal to Binary
+C Program to Convert Numbers to Roman Numerals
+C Program to Convert Octal to Decimal
+C Program to Convert a Number Decimal System to Binary System using Recursion
+C Program to Convert Binary Code of a Number into its Equivalent Gray’s Code without using Recursion
+C Program to Convert Binary Code of a Number into its Equivalent Gray’s Code using Recursion

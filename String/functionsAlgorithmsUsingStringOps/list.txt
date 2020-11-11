@@ -1,0 +1,6 @@
+C Program to Implement Regular Expression Matching
+C Program to Implement strpbrk() Function
+C Program to Implement the KMP Pattern Searching Algorithm
+C Program to Sort Word in String
+C Program to Sort String Ignoring Whitespaces and Repeating Characters Only Once
+C Program to Sort the String and Repeated Characters should be present only Once

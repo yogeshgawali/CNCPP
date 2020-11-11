@@ -1,0 +1,29 @@
+
+C Program to Find the Frequency of the Word ‘the’ in a given Sentence
+C Program to Read a String and find the Sum of all Digits in the String
+C Program to Copy One String to Another using Recursion
+C Program to find the First Capital Letter in a String using Recursion
+C Program to find the First Capital Letter in a String without using Recursion
+C Program to find the Length of the String using Recursion
+C Program to find Longer Repeating Sequence
+C Program to Find the Frequency of Substring in the given String
+C Program to Find the Frequency of Every Word in a given String
+C Program to Find Highest Frequency Character in a String
+C Program to Find the Length of the Longest Repeating Sequence in a String
+	Welcome to C Programming Class, Welcome Again to C Programming Class!
+	 
+	Length of Longest Repeating Sequence:3
+	 
+	Total number of words : 3
+	 The subsequence is :  to C Programming
+	The length of longest common subsequence is : 19
+C Program to find the possible subsets of the Strin
+	input: the
+	output:the
+	t
+	h
+	e
+	th
+	te
+	he
+	the
