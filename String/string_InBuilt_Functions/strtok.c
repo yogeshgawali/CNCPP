@@ -18,7 +18,8 @@ The C library function breaks string str into a series of tokens using the delim
 #include <string.h>
 #include <stdio.h>
 
-int main () {
+int main()
+{
    char str[80] = "This function returns a pointer to the first token found in the string.";
    const char s[2] = " ";
    char *token;
