@@ -18,19 +18,19 @@ This function returns a pointer to the destination, which is str1.
 #include <string.h>
 int main()
 {
-    char str[100] = "Learningisfun";
+    char str[100] = "Learning is fun!";
     char *first, *second;
     first = str;
     second = str;
-    printf("Original string :%s\n ", str);
+    printf("Original string : %s\n", str);
 
     // when overlap happens then it just ignore it
     memcpy(first + 8, first, 10);
-    printf("memcpy overlap : %s\n ", str);
+    printf("memcpy overlap  : %s\n", str);
 
     // when overlap it start from first position
     memmove(second + 8, first, 10);
-    printf("memmove overlap : %s\n ", str);
+    printf("memmove overlap : %s\n", str);
 
     return 0;
 }
